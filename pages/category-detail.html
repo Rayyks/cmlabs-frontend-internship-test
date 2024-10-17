@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category Detail - MealApp</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  </head>
+  <body class="bg-white">
+    <!-- Navbar -->
+    <nav class="bg-white shadow">
+      <div class="container mx-auto px-4 sm:px-6 py-3">
+        <div class="flex flex-col sm:flex-row justify-between items-center">
+          <a
+            href="category.html"
+            class="text-2xl font-bold text-gray-800 mb-4 sm:mb-0"
+            >MealApp</a
+          >
+          <div
+            class="flex flex-wrap justify-center space-x-4 sm:space-x-6 font-medium transition-all duration-300"
+          >
+            <a
+              href="category.html"
+              class="text-gray-600 hover:text-gray-800 hover:underline px-2 py-1"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 hover:text-gray-800 hover:underline px-2 py-1"
+              >Foods</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 hover:text-gray-800 hover:underline px-2 py-1"
+              >Ingredients</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 hover:text-gray-800 hover:underline px-2 py-1"
+              >Local Culinary</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="bg-gray-200 py-2">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="flex items-center">
+          <a
+            href="category.html"
+            class="text-gray-700 hover:text-gray-900 flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-house mr-1"
+            >
+              <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+              <path
+                d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+              />
+            </svg>
+            <span>Home</span>
+          </a>
+          <span class="mx-2 text-gray-700">></span>
+          <a href="#" class="text-gray-700 hover:text-gray-900">Foods</a>
+          <span class="mx-2 text-gray-700">></span>
+          <span id="categoryName" class="text-gray-500">Category Name</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-100 py-12 sm:py-16">
+      <div class="container mx-auto px-4 sm:px-6 text-center">
+        <h1
+          id="mealName"
+          class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4"
+        >
+          CATEGORY MEAL
+        </h1>
+        <p class="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
+          Explore a wide variety of meals in the selected category!
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 sm:px-6 py-12 sm:py-24">
+      <div class="max-w-6xl mx-auto">
+        <!-- Container -->
+        <div
+          id="mealList"
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"
+        >
+          <!-- Daftar makanan akan dimasukkan di sini secara dinamis -->
+          <div
+            class="relative overflow-hidden rounded-lg cursor-pointer group"
+            onclick="goToMealDetail('1')"
+          >
+            <img
+              src="https://via.placeholder.com/150x200"
+              alt="Meal Name"
+              class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <h2
+              class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-xl font-semibold"
+            >
+              Meal Name
+            </h2>
+          </div>
+          <!-- -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="../js/category-detail.js"></script>
+  </body>
+</html>
