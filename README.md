@@ -29,6 +29,7 @@ Proyek ini adalah aplikasi web sederhana yang mengambil dan menampilkan detail t
 ### Prasyarat
 
 - Pastikan Anda memiliki ekstension Live Server di vs code
+- Pastikan juga anda terhubung dengan internet karena hampir semua menggunakan Play CDN
 
 ### Mengkloning Repositori
 
