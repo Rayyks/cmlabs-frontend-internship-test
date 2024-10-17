@@ -28,13 +28,14 @@ Proyek ini adalah aplikasi web sederhana yang mengambil dan menampilkan detail t
 
 ### Prasyarat
 
-- Pastikan Anda memiliki [Node.js](https://nodejs.org/) dan [npm](https://www.npmjs.com/) terinstal di komputer Anda.
+- Pastikan Anda memiliki ekstension Live Server di vs code
 
 ### Mengkloning Repositori
 
 1. Buka terminal Anda.
-2. Klon repositori menggunakan perintah berikut:
+2. Clone repositori menggunakan perintah berikut:
 
    ```bash
-   git clone https://github.com/namauser/namarepo.git
+   git clone https://github.com/Rayyks/cmlabs-frontend-internship-test.git
+
    ```
